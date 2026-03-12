@@ -1,6 +1,6 @@
 # Development Workflow - Smart Objects Cameras
 
-> **Prefer slides?** View the [Workflow Slides](workflow-slides.html) for a visual walkthrough.
+> **Prefer slides?** View the [Workflow Slides](https://kandizzy.github.io/smart-objects-cameras/workflow-slides.html) for a visual walkthrough.
 
 ## Overview
 

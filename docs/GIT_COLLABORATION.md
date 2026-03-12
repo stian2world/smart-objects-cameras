@@ -1,6 +1,6 @@
 # GitHub Collaboration Strategies
 
-> **Prefer slides?** View the [Git Collaboration Slides](git-collaboration-slides.html) for a visual walkthrough.
+> **Prefer slides?** View the [Git Collaboration Slides](https://kandizzy.github.io/smart-objects-cameras/git-collaboration-slides.html) for a visual walkthrough.
 
 Quick reference for managing student contributions to the smart objects camera template.
 

@@ -1,6 +1,6 @@
 # WiFi Network Management
 
-> **Prefer slides?** View the [WiFi Management Slides](wifi-management-slides.html) for a visual walkthrough.
+> **Prefer slides?** View the [WiFi Management Slides](https://kandizzy.github.io/smart-objects-cameras/wifi-management-slides.html) for a visual walkthrough.
 
 Managing WiFi connections on your Raspberry Pi cameras when moving between different networks (home ↔ classroom).
 

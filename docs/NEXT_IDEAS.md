@@ -1,6 +1,6 @@
 # What Else Can Your Camera See?
 
-> **Prefer slides?** View the [Next Ideas Slides](next-ideas-slides.html) for a visual overview.
+> **Prefer slides?** View the [Next Ideas Slides](https://kandizzy.github.io/smart-objects-cameras/next-ideas-slides.html) for a visual overview.
 
 Five project ideas from the `oak-examples` repo that work on our OAK-D cameras (RVC2) today. Each one builds on the existing detector + Discord bot pattern.
 

@@ -1,6 +1,6 @@
 # Student Quick Start Guide
 
-> **Prefer slides?** [View the slide version](student-quickstart-slides.html)
+> **Prefer slides?** [View the slide version](https://kandizzy.github.io/smart-objects-cameras/student-quickstart-slides.html)
 
 ## 🎯 Quick Start Checklist
 

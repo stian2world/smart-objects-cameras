@@ -1,6 +1,6 @@
 # Smart Objects Camera System - Equipment List
 
-> **Prefer slides?** View the [Equipment List Slides](equipment-list-slides.html) for a visual overview.
+> **Prefer slides?** View the [Equipment List Slides](https://kandizzy.github.io/smart-objects-cameras/equipment-list-slides.html) for a visual overview.
 
 ## Per-Station Setup (x3 stations: Orbit, Gravity, Horizon)
 
