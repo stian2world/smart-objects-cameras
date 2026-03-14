@@ -10,6 +10,65 @@ Educational template repository for Discord bots that communicate with Luxonis O
 
 **Core concept:** Cameras as conversational agents — reconfigure and query them in real-time through Discord, not just passive sensors configured once via SSH.
 
+## Workflow Orchestration
+
+### 1. Plan Mode Default
+
+- Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
+- If something goes sideways, STOP and re-plan immediately - don't keep pushing
+- Use plan mode for verification steps, not just building
+- Write detailed specs upfront to reduce ambiguity
+
+### 2. Subagent Strategy
+
+- Use subagents liberally to keep main context window clean
+- Offload research, exploration, and parallel analysis to subagents
+- For complex problems, throw more compute at it via subagents
+- One task per subagent for focused execution
+
+### 3. Self-Improvement Loop
+
+- After ANY correction from the user: update `tasks/lessons.md` with the pattern
+- Write rules for yourself that prevent the same mistake
+- Ruthlessly iterate on these lessons until mistake rate drops
+- Review lessons at session start for relevant project
+
+### 4. Verification Before Done
+
+- Never mark a task complete without proving it works
+- Diff behavior between main and your changes when relevant
+- Ask yourself: "Would a staff engineer approve this?"
+- Run tests, check logs, demonstrate correctness
+
+### 5. Demand Elegance (Balanced)
+
+- For non-trivial changes: pause and ask "is there a more elegant way?"
+- If a fix feels hacky: "Knowing everything I know now, implement the elegant solution"
+- Skip this for simple, obvious fixes - don't over-engineer
+- Challenge your own work before presenting it
+
+### 6. Autonomous Bug Fixing
+
+- When given a bug report: just fix it. Don't ask for hand-holding
+- Point at logs, errors, failing tests - then resolve them
+- Zero context switching required from the user
+- Go fix failing CI tests without being told how
+
+### Task Management
+
+1. **Plan First**: Write plan to `tasks/todo.md` with checkable items
+2. **Verify Plan**: Check in before starting implementation
+3. **Track Progress**: Mark items complete as you go
+4. **Explain Changes**: High-level summary at each step
+5. **Document Results**: Add review section to `tasks/todo.md`
+6. **Capture Lessons**: Update `tasks/lessons.md` after corrections
+
+### Core Principles
+
+- **Simplicity First**: Make every change as simple as possible. Impact minimal code.
+- **No Laziness**: Find root causes. No temporary fixes. Senior developer standards.
+- **Minimal Impact**: Changes should only touch what's necessary. Avoid introducing bugs.
+
 ## Development Environment
 
 ```bash
@@ -19,6 +78,8 @@ source /opt/oak-shared/venv/bin/activate
 
 # Key packages: depthai, depthai-nodes, opencv-python, numpy, discord.py, requests, aiohttp, python-dotenv
 ```
+
+**Critical versions** (see `docs/WORKING_VERSIONS.md`): depthai 3.3.0, depthai-nodes 0.3.7, opencv-contrib-python 4.10.0.84, numpy 1.26.4 (numpy <2.0 required).
 
 **Secrets:** Each user has `~/oak-projects/.env` with `DISCORD_WEBHOOK_URL` and `DISCORD_BOT_TOKEN`. Never commit `.env` files.
 
@@ -331,14 +392,21 @@ All extensions should follow the established pattern:
 
 | Document | Purpose |
 |----------|---------|
-| `docs/STUDENT_QUICKSTART.md` | Getting started fast |
+| `docs/STUDENT_QUICKSTART.md` | Getting started fast (includes Claude Code setup) |
+| `docs/WORKFLOW.md` | File copying workflow (laptop → Pi) |
 | `docs/CHEATSHEET.md` | Command quick reference |
-| `docs/DISCORD_BOT_PLAN.md` | Bot setup guide |
+| `docs/WORKING_VERSIONS.md` | Package version compatibility (critical!) |
+| `docs/DISCORD_BOT_PLAN.md` | Full bot setup guide |
+| `docs/discord-integration.md` | Webhook setup (simpler, one-way) |
 | `docs/GIT_COLLABORATION.md` | Git workflow for teams |
+| `docs/NEXT_IDEAS.md` | 5 project extension ideas with code |
+| `docs/EQUIPMENT_LIST.md` | Hardware reference and pricing |
 | `docs/INITIAL_SETUP.md` | Instructor: Pi setup from scratch |
 | `docs/multi-user-access.md` | Multi-user coordination |
 | `docs/wifi-management.md` | WiFi network switching |
 | `WHITEBOARD_READER.md` | OCR feature documentation |
+
+**Slides:** Most docs have [slide versions](https://kandizzy.github.io/smart-objects-cameras/) for quick reference.
 
 ## External Resources
 
